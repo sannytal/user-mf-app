@@ -3,16 +3,20 @@ import React from "react";
 import App from "./App";
 import { BrowserRouter as Router } from "react-router-dom";
 
-const register = (containerObj) => {
-  return {
-    content: function () {
-      return (
-        <Router>
-          <App containerData={containerObj} />
-        </Router>
-      );
-    },
-  };
+window.renderBrowse = (containerId, containerObj) => {
+  ReactDOM.render(<App containerData={containerObj} />, document.getElementById(containerId));
 };
 
-export default { register };
+// const register = (containerObj) => {
+//   return {
+//     content: function () {
+//       return (
+//         <Router>
+//           <App containerData={containerObj} />
+//         </Router>
+//       );
+//     },
+//   };
+// };
+
+// export default { register };
