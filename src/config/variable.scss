@@ -1,0 +1,13 @@
+:root {
+    --primary-color: #0066ff;
+    --secondary-color: #ff9933;
+    --font-family: 'Roboto', 'sans-serif';
+  }
+
+:export {
+    primarycolor1: var(--primary-color1);
+    primarycolor2: var(--primary-color2);
+    secondarycolor1: var(--primary-color2);
+    secondarycolor2: var(--primary-color2);
+    fontfamily: var(--font-family);
+}
